@@ -1,2 +1,0 @@
-# bot-ig
-IG BOT
