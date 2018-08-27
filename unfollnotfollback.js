@@ -118,7 +118,7 @@ const Excute = async function(User,sleep){
 			}
 		}));
 		console.log(chalk`{blue  | Account To Unfollow : ${AccountToUnfollow.length}}`)
-		AccountToUnfollow = _.chunk(AccountToUnfollow, 1);
+		AccountToUnfollow = _.chunk(AccountToUnfollow, 10);
 		for (let i = 0; i < AccountToUnfollow.length; i++) {
 			var timeNow = new Date();
 			timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
