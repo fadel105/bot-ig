@@ -66,7 +66,7 @@ const Excute = async function(User,sleep){
         do{
             if (cursor) feed.setCursor(cursor);
             var getPollowers = await feed.get();
-            getPollowers = _.chunk(getPollowers, 5);
+            getPollowers = _.chunk(getPollowers, 10);
             for (let i = 0; i < getPollowers.length; i++) {
               var timeNow = new Date();
         			timeNow = /*nambahin time log aja w bingung, dungu juga w*/ `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
